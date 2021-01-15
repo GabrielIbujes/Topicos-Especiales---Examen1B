@@ -23,4 +23,9 @@ export class LoginPage implements OnInit {
     }).catch(err=>alert('La información proporcionada es incorrecta, o no existe el usuario'))
   }
 
+  registro(){
+    console.log("usuario registrado");
+    this.router.navigate(['/registro']);
+  }
+
 }

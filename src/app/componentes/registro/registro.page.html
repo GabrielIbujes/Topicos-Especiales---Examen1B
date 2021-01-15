@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating" >Correo - User</ion-label>
+    <ion-input type="text" [(ngModel)]="email" name="email" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Password - Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password" name="password" ></ion-input>
+  </ion-item>
+  <br><br>
+
+  <ion-button (click)="registro()" expand="block" >Registrate</ion-button>
+  <ion-button (click)="volver()" expand="block" >Volver</ion-button>
+
+</ion-content>
